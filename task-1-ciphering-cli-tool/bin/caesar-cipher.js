@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import program from 'commander';
+import app from '../src/index.js';
 
 const configOptionDescription = `config for ciphers Config is a string with pattern {XY(-)}n, where:
       X is a cipher mark:
@@ -24,4 +25,4 @@ const {
   input, output, config,
 } = program.opts();
 
-console.log(input, output, config);
+app(input, output, config);
