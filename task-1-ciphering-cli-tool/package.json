@@ -1,0 +1,21 @@
+{
+  "name": "task-1-ciphering-cli-tool",
+  "version": "1.0.0",
+  "description": "CLI tool that will encode and decode a text by Caesar/Atbash/ROT-8 cipher.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "caesar-cipher": "bin/caesar-cipher.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
