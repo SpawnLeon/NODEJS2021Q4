@@ -3,8 +3,7 @@ export default (config) => {
   const fixedResult = result.filter((el) => el.length);
 
   if (fixedResult.length === 0) {
-    console.error('Not valid configuration.');
-    process.exit(-1);
+    throw new Error(`Invalid config: ${config}`);
   }
 
   return fixedResult;
